@@ -1,2 +1,3 @@
-# forgeweb-developer-hiring-platform
-Generated with WebForge
+# ForgeWeb – Developer Hiring Platform
+
+Generated with [WebForge](https://forgeweb.lovable.app).

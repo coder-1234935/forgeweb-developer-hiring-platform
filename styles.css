@@ -1,0 +1,42 @@
+/* Shared Styles */
+:root {
+  --primary: #0045F6;
+  --secondary: #D9E3FE;
+  --background: #FFFFFF;
+  --text-primary: #0045F6;
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  --radius: 14px;
+  --radius-pill: 999px;
+}
+*,
+*::before,
+*::after {box-sizing:border-box;margin:0;padding:0;}
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background: var(--background);
+  line-height: 1.6;
+}
+header {background:#fff; box-shadow:0 2px 4px rgba(0,0,0,0.1); position:sticky; top:0; z-index:10;}
+nav {display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:auto; padding:1rem;}
+nav a.logo img {height:40px;}
+nav ul {list-style:none; display:flex; gap:1.5rem;}
+nav ul li a {text-decoration:none; color:var(--text-primary); font-weight:500;}
+nav ul li a:hover {color:var(--primary);}
+button {cursor:pointer; border:none; font-family:var(--font-body);}
+.btn-primary {background:var(--primary); color:#fff; padding:.75rem 1.5rem; border-radius:var(--radius-pill); transition:background .3s;}
+.btn-primary:hover {background:#0035c4;}
+.btn-secondary {background:#fff; color:#0D0D0D; padding:.75rem 1.5rem; border-radius:var(--radius-pill); border:1px solid #ccc;}
+section {padding:4rem 1rem; max-width:1200px; margin:auto;}
+.hero {display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:center;}
+.hero img {width:100%; border-radius:var(--radius);}
+h1 {font-family:var(--font-heading); font-size:2.5rem; color:var(--primary); margin-bottom:.5rem;}
+h2 {font-family:var(--font-heading); font-size:2rem; margin-bottom:1rem;}
+p {margin-bottom:1rem;}
+.cards {display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem;}
+.card {background:#fff; border:1px solid #eee; border-radius:var(--radius); padding:1.5rem; text-align:center; transition:transform .3s;}
+.card:hover {transform:translateY(-5px);}
+.card img {max-width:100%; height:auto; border-radius:var(--radius); margin-bottom:.75rem;}
+footer {background:#f9f9f9; padding:2rem 1rem; text-align:center; font-size:.9rem;}
+@media (max-width:768px){.hero{grid-template-columns:1fr; text-align:center;}}
